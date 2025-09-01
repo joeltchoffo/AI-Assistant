@@ -1,0 +1,13 @@
+import fitz  # PyMuPDF
+import sys
+sys.stdout.reconfigure(encoding="utf-8")
+
+def pdf_to_text(path):
+    doc = fitz.open(path)
+    text = ""
+    for page in doc:
+        text += page.get_text("text") + "\n"
+    return text
+
+text = pdf_to_text("./data/papers/infoSicherheit_merged.pdf")
+print(text[:1000])  # preview first 1000 chars
