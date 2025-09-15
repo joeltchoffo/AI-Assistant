@@ -1,15 +1,9 @@
-# Python
 .venv/
 venv/
 __pycache__/
-*.py[cod]
-*.so
-*.dll
-*.lib
 build/
 dist/
 *.egg-info/
-# Torch/Models (wenn nötig selbst adden)
-*.pt
-*.pth
-*.onnx
+*.dll
+*.lib
+*.so
