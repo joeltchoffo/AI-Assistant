@@ -1,0 +1,22 @@
+# Core
+numpy
+faiss-cpu
+torch
+transformers
+sentence-transformers
+
+# Parsing / Chunking
+pymupdf
+tiktoken
+
+# CLI / UX
+tqdm
+rich
+typer[all]
+
+# Optional UI
+streamlit
+
+# Typen & Tests
+pydantic
+pytest
